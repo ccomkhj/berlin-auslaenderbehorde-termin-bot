@@ -1,7 +1,16 @@
-# Berlin Auslaenderbehorde Termin Bot
+# Berlin Auslaenderbehorde Termin Bot 
 
 This application uses Selenium library to automate the process of getting an appointment in Berlin Ausländerbehörde.
-Instead of notifying the person like other solutions, this application automatically **books** for you the requested *Termin*. For more info please visit [github pages](https://yilmaznaslan.github.io/berlin-auslaenderbehorde-termin-bot/ )
+Instead of notifying the person like other solutions, this application automatically **books** for you the requested *Termin*. 
+
+Source repo: [github pages](https://yilmaznaslan.github.io/berlin-auslaenderbehorde-termin-bot/ )
+
+## Customization in this repo
+
+ready-to-run in remote machine.
+
+You can run this job in the cloud or workstation. 
+So, you don't have to turn on your PC all time.
 
 <img src="/doc/form.gif"  width="60%" height="30%">
 
@@ -42,9 +51,17 @@ docker run \
   - Write the Country value in **English** as displayed on the browser
 - Fill the [visaFormTO.Json](src/main/resources/DEFAULT_VISA_APPLICATION_FORM.json) with your visa request.
   - You can also copy-paste from a [template](src/main/resources/) that matches your request.  
- 
+
+### Running locally 
+
 - Run the application in terminal by `./gradlew run`.
   - You will get the email from *LEA* once the bot booked the termin. 
   - REMEMBER: Due to very limited number of available spots, you might need to run the script for a week !
 
 - To see what is happening inside the container, head to http://localhost:7900/?autoconnect=1&resize=scale&password=secret.
+
+### Running remotely [Contribution in this repo]
+
+- ssh to your remote machine `ssh username@remote_host`
+  - Enter to the directory `cd path/to/your/repo` 
+- Run the application in terminal by `sh remote.sh`

@@ -1,0 +1,1 @@
+screen -dm bash -c 'sh run.sh;'
