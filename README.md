@@ -12,6 +12,9 @@ ready-to-run in remote machine.
 You can run this job in the cloud or workstation. 
 So, you don't have to turn on your PC all time.
 
+Option 1. remote kernel
+Option 2. docker compose
+
 <img src="/doc/form.gif"  width="60%" height="30%">
 
 ## Prerequisites
@@ -60,8 +63,12 @@ docker run \
 
 - To see what is happening inside the container, head to http://localhost:7900/?autoconnect=1&resize=scale&password=secret.
 
-### Running remotely [Contribution in this repo]
+### Running remotely [Option 1. Contribution in this repo]
 
 - ssh to your remote machine `ssh username@remote_host`
   - Enter to the directory `cd path/to/your/repo` 
 - Run the application in terminal by `sh remote.sh`
+
+### Running using docker compose [Option 2. Contribution in this repo]
+
+- `docker compose up`
