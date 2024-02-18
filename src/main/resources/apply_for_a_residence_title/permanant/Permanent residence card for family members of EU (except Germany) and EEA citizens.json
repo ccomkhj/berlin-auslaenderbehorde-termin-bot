@@ -4,6 +4,6 @@
   "numberOfApplicants": "1",
   "isThereFamilyMember": "2",
   "serviceType": "Apply for a permanent settlement permit",
-  "visaPurpose": "Economic activity",
-  "visaType" : "Residence permit for job-seeking qualified skilled workers – Issuance (sect. 20)"
+  "visaPurpose": null,
+  "visaType" : "Permanent residence card for family members of EU (except Germany) and EEA citizens"
 }

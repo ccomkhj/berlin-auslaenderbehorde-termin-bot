@@ -1,7 +1,7 @@
 {
-  "isResidencePermitPresent":  null,
-  "residencePermitId": "D12123123",
-  "serviceType": "Extend a residence title",
+  "isResidencePermitPresent":  false,
+  "residencePermitId": null,
+  "serviceType": "Apply for a residence title",
   "visaPurpose": "Educational purposes",
   "visaType" : "Residence permit for attending a language course (sect. 16f para. 1)"
 }
