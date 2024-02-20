@@ -1,11 +1,10 @@
 version: '3'
 services:
   selenium:
-    image: seleniarm/standalone-chromium:latest
-    ports:
-      - 4444:4444
-      - 7900:7900
-    shm_size: 2g
+    image: selenium/standalone-chrome:latest
+    container_name: selenium
+    network_mode: host
+    shm_size: "2g"
     environment:
       - SE_NODE_MAX_SESSIONS=5
       - SE_NODE_OVERRIDE_MAX_SESSIONS=true
@@ -15,5 +14,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile_auto
-    command: ./gradlew
-
+    depends_on:
+      - selenium
+    network_mode: host

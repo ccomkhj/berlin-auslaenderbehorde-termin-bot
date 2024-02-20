@@ -1,7 +1,10 @@
 FROM openjdk:17-alpine
 
+# Set the working directory to /app
 WORKDIR /app
 
+# Copy all files from the current directory to /app in the container
 COPY . /app
 
-RUN chmod +x gradlew
+# Run the command to build and run your application
+CMD ["./gradlew", "run"]
