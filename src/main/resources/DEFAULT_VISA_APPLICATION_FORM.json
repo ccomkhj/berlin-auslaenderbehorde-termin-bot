@@ -1,9 +1,9 @@
 {
-  "citizenshipValue": "Turkey",
-  "citizenshipValueOfFamilyMember": null,
+  "citizenshipValue": "Korean Republic",
+  "citizenshipValueOfFamilyMember": "Korean Republic",
   "numberOfApplicants": "1",
-  "isThereFamilyMember": "2",
-  "serviceType": "Apply for a permanent settlement permit",
-  "visaPurpose": "Economic activity",
-  "visaType" : "Residence permit for job-seeking qualified skilled workers – Issuance (sect. 20)"
+  "isThereFamilyMember": "1",
+  "serviceType": "Apply for a residence title",
+  "visaPurpose": "Family reasons",
+  "visaType" : "Residence permit for spouses and children of holders of an EU Blue Card (sect. 29-32)"
 }

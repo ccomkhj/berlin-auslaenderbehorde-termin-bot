@@ -43,7 +43,7 @@ public class DriverUtils {
         String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
         LOGGER.info("Starting to {}", methodName);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.pollingEvery(Duration.ofSeconds(2));
+        wait.pollingEvery(Duration.ofSeconds(3));
 
         wait.until(webDriver -> {
             try {

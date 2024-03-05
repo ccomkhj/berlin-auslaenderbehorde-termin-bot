@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
 
 public class AppointmentFinder {
 
-    public static final long FORM_REFRESH_PERIOD_IN_SECONDS = 5;
+    public static final long FORM_REFRESH_PERIOD_IN_SECONDS = 6;
     public static final long TIMEOUT_FOR_INTERACTING_WITH_ELEMENT_IN_SECONDS = 60;
     private static final String URL = "https://otv.verwalt-berlin.de/ams/TerminBuchen?lang=en";
 

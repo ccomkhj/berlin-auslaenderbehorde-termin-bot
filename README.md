@@ -1,6 +1,5 @@
 # Berlin Auslaenderbehorde Termin Bot 
 
-<<<<<<< HEAD
 This application uses Selenium library to automate the process of getting an appointment in Berlin Ausländerbehörde.
 Instead of notifying the person like other solutions, this application automatically **books** for you the requested *Termin*. 
 
@@ -8,19 +7,17 @@ Source repo: [github pages](https://yilmaznaslan.github.io/berlin-auslaenderbeho
 
 ## Customization in this repo
 
-ready-to-run in remote machine.
+1. ready-to-run in remote machine.
 
 You can run this job in the cloud or workstation. 
 So, you don't have to turn on your PC all time.
 
 Option 1. remote kernel
 Option 2. docker compose
-=======
-This application uses Selenium library to automatically detect when an appointment is available at
-Ausländerbehörde Berlin for the selected visa service. Whenever an available day is found, it beeps.
->>>>>>> 0f107798ac572f6fd1455e9410312cd918a46f70
 
 <img src="/doc/form.gif"  width="60%" height="30%">
+
+2. Reliability. It occassionally miss `Citizenship` section. Sleeping is added.
 
 ## Prerequisites
 1. In order to run selenium server you will need to install docker first. See [Get Docker](https://docs.docker.com/get-docker/) for more info. After installing the docker run the selenium server as below
@@ -64,6 +61,7 @@ docker run \
 
 - Run the application in terminal by `./gradlew run`.
     - You will get a sound notification once the bot found available dates.
+    - You will need Java version +17 to run locally.
 
 - To see what is happening inside the container, head to http://localhost:7900/?autoconnect=1&resize=scale&password=secret.
 

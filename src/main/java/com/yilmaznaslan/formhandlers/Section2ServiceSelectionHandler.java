@@ -118,6 +118,15 @@ public class Section2ServiceSelectionHandler {
                 //saveCountries(select);
                 select.selectByVisibleText(citizenshipValue);
 
+                try {
+                    // Introduce a 1-second fixed delay after selecting and before verification
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    // Handle the InterruptedException
+                    Thread.currentThread().interrupt(); // Restore interrupted status
+                    LOGGER.error("Interrupted while waiting after selecting citizenship value", e);
+                }
+
                 // Double check if it is selected
                 element = currentDriver.findElement(By.cssSelector("select[name='" + elementName + "']"));
                 select = new Select(element);
