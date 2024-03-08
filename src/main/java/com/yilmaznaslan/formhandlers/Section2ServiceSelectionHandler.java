@@ -119,8 +119,8 @@ public class Section2ServiceSelectionHandler {
                 select.selectByVisibleText(citizenshipValue);
 
                 try {
-                    // Introduce a 1-second fixed delay after selecting and before verification
-                    Thread.sleep(1000);
+                    // Introduce a 0.5second fixed delay after selecting and before verification
+                    Thread.sleep(500);
                 } catch (InterruptedException e) {
                     // Handle the InterruptedException
                     Thread.currentThread().interrupt(); // Restore interrupted status
