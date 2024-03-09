@@ -93,25 +93,21 @@ public class AppointmentFinder {
             Section3DateSelectionHandler section3DateSelectionHandler = new Section3DateSelectionHandler(driver);
             notificationAdapter.triggerNotification(sessionUrl);
             IoUtils.savePage(driver, "date_selection_success");
-            // Log before sleeping
-            LOGGER.info("Sleeping for 3 hours to wait for booking...");
-
+            executor.shutdown();
             try {
-            // Sleep for 3 hours
-            Thread.sleep(3 * 60 * 60 * 1000);
+            // Log, or handle the condition that caused the pause.
+                System.out.println("Pausing execution for 20 mins...");
+                Thread.sleep(1000*60*20); // Sleep for 10 seconds before checking again. Adjust as necessary.
+                System.out.println("20 Mins over!");
             } catch (InterruptedException e) {
-                Thread.currentThread().interrupt(); // Handle the interrupt
-                LOGGER.error("Thread was interrupted during sleep", e);
-            }
-            // Log after waking up
-            LOGGER.info("Woke up after 3 hours");
-            // executor.shutdown();
-            /*
+                Thread.currentThread().interrupt(); // Handle interrupted exception.
+            };
+            
             if (section3DateSelectionHandler.isDateAndTimeVerified().isPresent()) {
                 LOGGER.info("End of process");
 
             }
-             */
+            
         }
     }
 
